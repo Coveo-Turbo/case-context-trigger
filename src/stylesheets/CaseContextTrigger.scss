@@ -1,3 +1,107 @@
-.CoveoCaseContextTrigger {
-    // Styles here
+.CoveoSearchInterface.coveo-case-context-activated {
+  .CoveoCaseContextTrigger {
+    display: flex;
+  }
 }
+
+.CoveoCaseContextTrigger {
+  display: none;
+  min-height: 60px;
+  flex-direction:column;
+  padding: 20px;
+  font-weight: 600;
+  background-color: #E7E7E7;
+  align-items: center;
+  justify-content: center;
+  color: #4f4f4f;
+  &.coveo-hidden {
+    display: none;
+  }
+  .coveo-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
+  .coveo-icon.case {
+    background-image: url(https://static.cloud.coveo.com/searchui/v2.7023/image/case.svg);
+  }
+
+  .coveo-context-info-container {
+    text-align: center;
+  }
+  .coveo-notification-msg {
+    font-size: 80%;
+    text-align: center;
+    margin: 4px auto;
+  }
+  .coveo-context-info .coveo-icon.case {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+.coveo-case-context-trigger-badge {
+  display: none;
+  min-width: 0;
+  width:100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: text-bottom;
+  font-size:10px;
+  background-color: #f58020;
+  color: #fff;
+  padding: 0 7px;
+  // border-bottom-left-radius: 8rem;
+  // border-top-left-radius: 8rem;
+  // border-top-right-radius: 20rem;
+  // border-bottom-right-radius: 20rem;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 20rem;
+  text-transform: uppercase;
+  // letter-spacing: 1px;
+  // height: 22px;
+  // font-weight: 700;
+  // line-height: 20px;
+  line-height: 16px;
+  height: 16px;
+  font-weight: normal;
+  letter-spacing: 0.09px;
+}
+
+.coveo-case-context-trigger-badge p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 16px;
+  margin: 0px;
+}
+
+.coveo-case-context-wrapper {
+  margin-bottom: 4px;
+}
+
+.CoveoSearchInterface.coveo-small-case-context-trigger {
+  .coveo-dropdown-header-wrapper .coveo-dropdown-header {
+    white-space: nowrap;
+  }
+  &.coveo-case-context-activated .CoveoCaseContextTrigger {
+    display: none;
+  }
+  &.coveo-case-context-activated .coveo-case-context-trigger-badge {
+    display: inline-block;
+  }
+}
+
+.CoveoSearchInterface.coveo-user-actions-opened {
+  &.coveo-case-context-activated .CoveoCaseContextTrigger {
+    display: none;
+  }
+  &.coveo-case-context-activated .coveo-case-context-trigger-badge {
+    display: none;
+  }
+} 

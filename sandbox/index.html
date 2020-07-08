@@ -22,6 +22,10 @@
             Coveo.init(document.getElementById('search'), {
                 Analytics: {
                     searchHub: demoConfig.searchHub,
+                },
+                CaseContextTrigger: {
+                  caseNumber: '12345',
+                  caseSubject: 'My Case Description here'
                 }
             });
     
@@ -58,6 +62,7 @@
               <div class="CoveoResultsFiltersPreferences"></div>
             </div>
             <div class="CoveoTriggers"></div>
+            <div class="CoveoCaseContextTrigger"></div>
             <div class="CoveoBreadcrumb"></div>
             <div class="CoveoDidYouMean"></div>
             <div class="coveo-results-header">
